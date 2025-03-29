@@ -56,6 +56,5 @@ python Coin_Ethe_Time_Series.py
 ## Contributions
 Feel free to fork this repository and improve the model! Open a pull request with your contributions.
 
-## License
-This project is licensed under the MIT License.
+
 
