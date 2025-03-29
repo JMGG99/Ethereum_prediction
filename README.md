@@ -18,12 +18,18 @@ The dataset includes historical Ethereum price data with features:
 
 ## Model Architecture
 ```plaintext
-GRU(128, return_sequences=True)
-Dropout(0.3)
-GRU(64, return_sequences=True)
-Dropout(0.2)
-GRU(64, return_sequences=False)
-Dense(1)
+    GRU(128, return_sequences=True, recurrent_dropout=0.1, input_shape=(window_size, len(numerical_cols))),
+    Dropout(0.2),
+
+    GRU(64, recurrent_dropout=0.1, return_sequences=True),
+    Dropout(0.1),
+
+
+    GRU(64, recurrent_dropout=0.1, return_sequences=False),
+    Dropout(0.1),
+
+
+    Dense(1)
 ```
 Optimizer: Adam
 Loss Function: Mean Squared Error (MSE)
