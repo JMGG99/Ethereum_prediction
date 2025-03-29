@@ -28,12 +28,6 @@ Dense(1)
 Optimizer: Adam
 Loss Function: Mean Squared Error (MSE)
 
-## Installation
-```bash
-git clone https://github.com/yourusername/ethereum-price-gru.git
-cd ethereum-price-gru
-pip install -r requirements.txt
-```
 
 ## Usage
 1. **Prepare Data**: Ensure dataset is formatted correctly.
@@ -41,7 +35,7 @@ pip install -r requirements.txt
 3. **Evaluate & Predict**: Use trained model for price forecasting.
 
 ```bash
-python train.py
+python Coin_Ethe_Time_Series.py
 ```
 
 ## Results
